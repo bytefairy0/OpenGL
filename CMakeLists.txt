@@ -5,13 +5,13 @@ find_package(glfw3 3.4 REQUIRED)
 
 #file(GLOB SOURCES "src/*.cpp" "src/*.c")
 
-set(ACTIVE_FILE "src/textures/texture.cpp")
+set(ACTIVE_FILE "src/textures/texture_exercise4/texture.cpp")
 
 configure_file(src/shaders/shader2.vs ${CMAKE_CURRENT_BINARY_DIR}/shader2.vs COPYONLY)
 configure_file(src/shaders/shader2.fs ${CMAKE_CURRENT_BINARY_DIR}/shader2.fs COPYONLY)
 
-configure_file(src/textures/texture.vs ${CMAKE_CURRENT_BINARY_DIR}/texture.vs COPYONLY)
-configure_file(src/textures/texture.fs ${CMAKE_CURRENT_BINARY_DIR}/texture.fs COPYONLY)
+configure_file(src/textures/texture_exercise4/texture.vs ${CMAKE_CURRENT_BINARY_DIR}/texture.vs COPYONLY)
+configure_file(src/textures/texture_exercise4/texture.fs ${CMAKE_CURRENT_BINARY_DIR}/texture.fs COPYONLY)
 
 
 add_executable(OpenGLApp ${ACTIVE_FILE} src/glad.c src/stb_image.cpp)
