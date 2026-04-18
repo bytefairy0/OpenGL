@@ -5,7 +5,7 @@ find_package(glfw3 3.4 REQUIRED)
 
 #file(GLOB SOURCES "src/*.cpp" "src/*.c")
 
-set(ACTIVE_FILE "src/camera/camera_mouse/camera_mouse.cpp")
+set(ACTIVE_FILE "src/camera/camera_class/camera_class.cpp")
 
 configure_file(src/shaders/shader2.vs ${CMAKE_CURRENT_BINARY_DIR}/shader2.vs COPYONLY)
 configure_file(src/shaders/shader2.fs ${CMAKE_CURRENT_BINARY_DIR}/shader2.fs COPYONLY)
